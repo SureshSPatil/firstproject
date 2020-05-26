@@ -1,17 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import App from './components/App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// //JSX
+// //ReactDOM.render(<h1>Hello world!</h1>, document.getElementById("root"))
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// //OLD way
+// var myNewP = document.createElement("p");
+// myNewP.innerHTML = "This is a paragraph."
+
+
+// /* First Excercise
+// let unordL = (
+//     <ul>
+//         <li>First Element</li>
+//         <li>Second Element</li>
+//         <li>Third Element</li>
+//     </ul>);
+
+// ReactDOM.render(unordL, document.getElementById('second')) */
+
+// /* 2nd Exercise
+// function MyApp() {
+//     return (    
+//     <ul>
+//         <li>First Element</li>
+//         <li>Second Element</li>
+//         <li>Third Element</li>
+//     </ul>);
+// }
+
+// ReactDOM.render(<MyApp />, document.getElementById('second'))*/
+
+// //Functional Components Practice
+// ReactDOM.render(<App />, document.getElementById("root"));
+
+// Parent/Child Component Practice
+ReactDOM.render(<App />, document.getElementById("root"))
